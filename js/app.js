@@ -2,7 +2,7 @@ $(function(){
   (function(){
     var App = {
       Init: function() {
-        App.Loading(App.UI());
+        App.UI();
       },
       UI: function(){
         // instagrab
@@ -81,16 +81,15 @@ $(function(){
           }
         });
 
-      },
-      Loading: function() {
-        // Loading Screen
-        $(window).on('load', function() {
-          $(".se-pre-con").fadeOut("slow");;
-        });
       }
     };
 
     App.Init();
 
   })();
+});
+
+// Loading Screen
+$(window).on('load', function() {
+  $(".se-pre-con").fadeOut("slow");;
 });
