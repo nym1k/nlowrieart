@@ -335,6 +335,10 @@ section::after {
     height: 30px;
   }
 
+	.nav-item:first-of-type {
+		display: none;
+	}
+
   .instagallery {
     max-width: 700px;
     margin: 0 auto;
