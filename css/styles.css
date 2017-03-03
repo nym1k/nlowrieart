@@ -57,6 +57,7 @@ footer p {
 
 .navbar-brand {
   display: none;
+	font-family: 'Satisfy', cursive;
 }
 
 .navbar-toggler {
