@@ -4,12 +4,10 @@ FONTS
   font-family: 'Satisfy', cursive;
 */
 
-
 /***************************
 	Preloader
 ***************************/
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+#loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
 	position: fixed;
 	left: 0px;
@@ -109,10 +107,19 @@ footer a:visited {
   position: absolute;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: url('../img/bg.jpg') no-repeat;
   background-size: cover;
   background-position: center;
@@ -141,9 +148,16 @@ footer a:visited {
 
 .about {
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #323335;
   padding-bottom: 10%;
 	border-top: 1px solid #666;
@@ -199,15 +213,19 @@ section::after {
 	width: 150%;
 	height: 75%;
 	background: inherit;
-	transform: rotate(-2deg);
-	transform-origin: 0 0;
+	-webkit-transform: rotate(-2deg);
+	        transform: rotate(-2deg);
+	-webkit-transform-origin: 0 0;
+	        transform-origin: 0 0;
 }
 
 .ss-style-doublediagonal::before {
 	height: 50%;
 	background: #336666;
-	transform: rotate(-3deg);
-	transform-origin: 3% 0;
+	-webkit-transform: rotate(-3deg);
+	        transform: rotate(-3deg);
+	-webkit-transform-origin: 3% 0;
+	        transform-origin: 3% 0;
 }
 
 /***************************
@@ -226,9 +244,14 @@ section::after {
 .feed {
   width: 100%;
 	max-width: 1337px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
 }
 
@@ -256,8 +279,10 @@ section::after {
 	overflow: hidden;
 	opacity: 0;
 	background: #000;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
-	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;
+	        transition-timing-function: ease-in-out;
 	padding: 0 2px;
 }
 
@@ -291,9 +316,16 @@ section::after {
 
 .contact {
 	  font-size: 1.5rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		border-top: 1px solid #333;
 }
 
@@ -359,17 +391,27 @@ section::after {
   }
 
 	.contact {
-		flex-direction: row;
-		justify-content: space-around;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 		max-width: 1200px;
 		margin: 0 auto;
 	}
 
 	.contact a {
 		min-width: 500px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 }
